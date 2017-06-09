@@ -4,7 +4,7 @@
   "main": "server.js",
   "scripts": {
       "build": "./node_modules/.bin/node-sass styles.scss public/css/styles.css",
-      "start": "npm i && npm run build && node server.js"
+      "start": "node server.js"
   },
   "dependencies": {
     "express": "~4.9.8"
