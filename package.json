@@ -3,7 +3,7 @@
   "description": "Sample Node to Heroku app",
   "main": "server.js",
   "scripts": {
-    "compile-sass": "node-sass styles.scss public/css/styles.css",
+    "compile-sass": "mkdir public/css && node-sass styles.scss public/css/styles.css",
     "auto-prefix-css": "./node_modules/postcss-cli/bin/postcss public/css/styles.css --use autoprefixer -d public/css/",
     "start": "node server.js",
     "local": "npm run compile-sass && npm run auto-prefix-css && node server.js"
