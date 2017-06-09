@@ -10,9 +10,7 @@ app.get('/', function(req, res) {
     res.sendFile(__dirname + '/index.html');
 });
 
-// make express look in the public directory for assets (css/js/img)
-app.use(express.static(__dirname + '/public'));
-
+app.use("/css", express.static(__dirname + '/public/css'));
 
 app.listen(port, function() {
     console.log('Our app is running on http://localhost:' + port);
