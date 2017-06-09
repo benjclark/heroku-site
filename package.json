@@ -4,7 +4,7 @@
   "main": "server.js",
   "scripts": {
     "create-dirs": "mkdir public && cd public && mkdir css && cd -",
-    "compile-sass": "mkdir public && cd public && mkdir css && cd - && node-sass styles.scss public/css/styles.css",
+    "compile-sass": "node-sass styles.scss public/css/styles.css",
     "auto-prefix-css": "./node_modules/postcss-cli/bin/postcss public/css/styles.css --use autoprefixer -d public/css/",
     "start": "node server.js",
     "local": "npm run create-dirs && npm run compile-sass && npm run auto-prefix-css && node server.js"
