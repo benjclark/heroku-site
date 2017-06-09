@@ -3,7 +3,7 @@
   "description": "Sample Node to Heroku app",
   "main": "server.js",
   "scripts": {
-    "create-dirs": "rm -rf ./public && mkdir public && cd public && mkdir css",
+    "create-dirs": "mkdir public && cd public && mkdir css",
     "compile-sass": "node-sass styles.scss public/css/styles.css",
     "auto-prefix-css": "./node_modules/postcss-cli/bin/postcss public/css/styles.css --use autoprefixer -d public/css/",
     "start": "node server.js",
